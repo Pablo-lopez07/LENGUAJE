@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    En un lugar de <strong>la mancha</strong> de cuyo <em>nombre</em> no <mark>quiero</mark> acordarme no hace mucho que vivia ...
+    <cite>Miguel de Cervantes
+        El Quijote
+    </cite>
+    <summary>
+        <p>Don Quijote</p>
+        <p>Sancho Panza</p>
+    </summary>
+    <table style="border: 5px solid #800000; font-size: 20px; border-spacing: 10px;">
+
+        <caption><strong>Referencias aplicadas a Don Quijote</strong></caption>
+
+        <colgroup>
+            <col style="background: #ffaaaa;">
+            <col span="2" style="background: #ffffaa;">
+        </colgroup>
+
+        <thead>
+            <tr><th>Parte</th><th>nombre</th><th>comentario</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Primera</td><td>Don Quijote de la Mancha</td><td>Ideado por él mismo</td></tr>
+            <tr><td>Primera</td><td>Caballero de la Triste Figura</td><td>Apodo creado por Sancho
+           Panza</td></tr>
+            <tr><td>Segunda</td><td>Caballero de los Leones</td><td>Apelativo creado por don
+           Quijote</td></tr>
+            <tr><td>Segunda</td><td>Alonso Quijano</td><td>Nombre real</td></tr>
+            </tbody>
+           
+            <tfoot>
+            <tr><th>******</th><th>Número total de referencias</th><th>4</th></tr>
+            </tfoot>
+        </tbody>
+    </table>
+
+    <iframe src="../UT2/ex.html" width="300" height="250" scrolling="auto"></iframe>
+    <h1><u>Tipos de INPUT</u></b></h1>
+        <form action="enviar.php" enctype="multipart/form-data method="post="">
+            USUARIO: <input type="text" name="usuario" value="user"><br>
+            CONTRASEÑA: <input type="password" name="pass"><br>
+            SOCIO:<input type="checkbox" name="socio" checked><br> 
+            SEXO: <input type="radio" name="genero" value="">Masculino
+            <input type="radio" name="genero" value="">Femenino<br>
+            TEMAS PREFERIDOS:
+            <input type="radio" name="aventuras" value="a"> Acción
+            <input type="radio" name="historica" value="h"> Historica
+            <input type="radio" name="ficcion" value="fi"> Ficción<br>
+            DESCUENTO:
+            <input type="number"name="descuento" value="15" size="5" readonlyxor></input>
+            SUBIR FOTOGRAFIA: <br>
+            <input type="file" name="fichero" accept="image/*"><br>
+            <input type="hidden" name="fecha" value=""> <br>
+            <input type="submit" value="enviar">
+            <input type="reset" value="reset">
+        </form>
+        <table border="2" align="center">
+            <tr>
+                <td><form action="enviar.php" method="post" name="formulario1">
+                    <label for="">Usuario</label>
+                    <input type="text">
+                    <br>
+                    <label for="">Usuario</label>
+                    <input type="text">
+                    <label for="">Usuario</label>
+                    <input type="text">
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                        <button type="submit"><img src="imagenes/—Pngtree—green submit button with play_21081676.png" alt="img enciar" width="50" height="20"></button>
+                        <button type="reset" value="reset">Reset</button>
+                    </form>
+                </td>
+            </tr>
+    
+        </table>
+
+</body>
+</html>

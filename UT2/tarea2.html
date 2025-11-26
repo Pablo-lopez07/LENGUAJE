@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea2</title>
+</head>
+<body>
+    <h1>INDUSTRIAS EXTREMEÑAS S.A</h1>
+    <fieldset>
+        <legend>FORMULARIO DE PEDIDOS</legend>
+        <table border="0px">
+            <tr>
+                <td colspan="2"><strong>>Paso 1.Identificacion</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Datos del cliente</legend>
+                        <label for="correo">Correo electronico: </label>
+                        <input type="text" name="correo"><br>
+                        <label for="passwd">Contraseña: </label>
+                        <input type="password" name="passwd" minlength="6"><br>
+                        <p>(longitud minima de 6 caracteres)</p>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Tipo de cliente</legend>
+                        <input type="radio" name="t.cliente" value="" checked>Particular <br>
+                        <input type="radio" name="t.cliente" value="">Asociacion <br>
+                        <input type="radio" name="t.cliente" value="">Empresa <br>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><strong>>Paso 2. Pedidos</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Datos de Producto</legend>
+                        <label for="prod">Productos</label><br>
+                        <select multiple size="8" name="prod">
+                            
+                            <optgroup label="Armaduras">
+                                <option value="1">AR001 Oro Reluciente</option>
+                                <option value="2">AR002 Plata Pulida</option>
+                                <option value="3">AR003 Bronce Reforzado</option>
+                            </optgroup>
+                            <optgroup label="Extras">
+                                <option value="4">EX001 Escudo</option>
+                                <option value="5">EX002 Invisivilidad</option>
+                            </optgroup>
+                        </select>
+                        
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Informacion de Interes</legend>
+                        <label for="coment">Comentario</label><br>
+                        <textarea name="coment" id="" cols="60" rows="10" placeholder="Introduce un comentario"></textarea><br>
+                        <input type="checkbox" name="coment" id="" checked>
+                        <label for="coment">Acepto recibir informacion publicitaria</label>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Datos de Envio</legend>
+                        <label for="Direccion">Direccion</label><br>
+                        <input type="text"><br>
+                        <label for="Ciudad">Ciudad</label>
+                        <input type="text"><br> 
+                        <label for="Codigo">Codigo postal</label>
+                        <input type="number" size="2">
+                    </fieldset>
+                </td>
+            </tr>
+            
+        </table>
+    </fieldset>
+</body>
+</html>

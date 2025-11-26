@@ -1,0 +1,56 @@
+/* ETIQUETAS CSS QUE INDICAN A WORDPRESS QUE ESTE ES EL TEMA HIJO */
+ 
+/*
+Theme Name: Twenty Fourteen Hijo
+Template: twentyfourteen
+*/
+
+/* alinea pie de página */
+.site-footer { text-align: left; }
+
+
+/* utiliza todo el ancho de la pantalla */
+
+.site-content .entry-header,
+ .site-content .entry-content,
+ .site-content .entry-summary,
+ .site-content .entry-meta, .page-content {
+ /* Original max-width: 474px */
+ max-width: 100%;
+ }
+
+.full-width .site-content blockquote.alignleft,
+ .full-width .site-content img.size-full.alignleft,
+ .full-width .site-content img.size-large.alignleft,
+ .full-width .site-content img.size-medium.alignleft,
+ .full-width .site-content .wp-caption.alignleft {
+ margin-left: 0;
+ /* was -168px */
+ }
+
+.full-width .site-content blockquote.alignright,
+ .full-width .site-content img.size-full.alignright,
+ .full-width .site-content img.size-large.alignright,
+ .full-width .site-content img.size-medium.alignright,
+ .full-width .site-content .wp-caption.alignright {
+ margin-right: 0;
+ /* was -168px */
+ }
+
+blockquote.aligncenter,
+ img.aligncenter,
+ .wp-caption.aligncenter {
+ clear: both;
+ }
+ /* fin ancho pantalla */ 
+ 
+ h1.entry-title {                                            /* FMC No pone nombre pagina en pagina */
+display: none;
+} 
+
+.content-area {
+	padding-top: 20px;                 /* FMC   48px    */
+}
+
+
+ 

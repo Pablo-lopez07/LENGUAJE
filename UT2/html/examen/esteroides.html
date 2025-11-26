@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section>
+        <!-- 
+        Formularios
+        -->
+    </section>
+
+    <section>
+        <!-- method="post / get" -->
+        <!-- maxlength="4" -->
+        <!-- disabled placeholder="Hombre" -->
+        <!-- accept=".txt" -->
+
+        <form action="#" method="" name="TEST">
+            <input type="text" name="user" value="user">
+            <input type="password" name="pass">
+            <input type="checkbox" name="socio" checked>
+
+            <!-- SOLO UNO -->
+            <input type="radio" name="género" value="m">Masculino
+            <input type="radio" name="género" value="f">Femenino
+
+            <!-- VARIOS -->
+            <input type="radio" name="aventuras" value="a"> Acción
+            <input type="radio" name="historica" ​​value="h"> Histórica
+            <input type="radio" name="ficcion" value="fi"> Ficción
+
+            <input name="descuento" value="15%" size="5" readonly>
+
+            <!-- ARCHIVO -->
+            <input type="file" name="fichero" accept="image/*">
+            
+            <input type="hidden" name="fecha" value="A">
+
+            <!-- BOTONES -->
+            <input type="submit" value="enviar">
+            <input type="submit" value="Pulsa">
+
+            <input type="reset" value="reset">
+
+            <fieldset>
+                <legend>
+                    hola
+                </legend>
+
+                <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Texto">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quibusdam eveniet et, a sint perspiciatis laboriosam ut? 
+                    Assumenda sequi provident itaque fugiat tempore officiis 
+                    magni, dolorum expedita officia voluptatum odio quas?
+                </textarea>
+                <label for="selcoches"><strong>Seleciona coche</strong></label>
+                    <select name="selcoches" id="coches">
+                        <option disabled selected>Introduce coche</option>
+                        <optgroup label="---Berlinas---">
+                            <option value="1">Toyota</option>
+                            <option value="2">Volvo</option>
+                            <option value="3">Relanult</option>
+                        </optgroup>
+                        <optgroup label="---SUV---">
+                            <option value="4" selected>Mercedes</option>
+                            <option value="5">Dacia</option>
+                        </optgroup>
+                    </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Otro tipo de lista</legend>
+                <label for="datos">Telefono institutos: 
+                    <input type="text" name="telefono" name="telefono" list="datos">
+                </label>
+                <datalist id="datos">
+                    <option value="123123123" label="IES Zurbaran"></option>
+                    <option value="321321312" label="IES Albalat"></option>
+                    <option value="231231231" label="IES Augustrobriga"></option>
+                </datalist>
+
+
+            </fieldset>
+
+            <fieldset>
+                <button type="submit"><img src="boton.png" alt="boton" width="15" height="15"></button>
+                <button type="reset">Reset</button>
+            </fieldset>
+
+            <section>
+                <label for="DNI">DNI: </label>
+                <input type="text" name="dni" placeholder="formato:111222333-X" pattern="[0-9]{9}-[a-zA-Z]{1}">
+            
+                <label for="password">Password</label>
+                <input type="password" name="password" maxlength="4" checked="">
+            </section>
+
+            <section>
+                
+            </section>
+
+        </form>
+    </section>
+
+
+</body>
+</html>

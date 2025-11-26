@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI primer Formulario</title>
+</head>
+
+<body>
+    <table border="2px" align="center">
+        <tr>
+            <td>
+                <form action="enviar.php" method="post" name="formulario1">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" name="usuario" value="Dame tu usuario">
+
+                    <br>
+
+                    <label for="DNI">DNI: </label>
+                    <input type="text" name="dni" placeholder="formato:111222333-X" pattern="[0-9]{9}-[a-zA-Z]{1}">
+
+                    <br>
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" maxlength="4" checked="">
+
+                    <br>
+
+                    <label for="musica">Musica</label>
+                    <input type="checkbox" name="musica" checked="">
+
+                    <br>
+
+                    <label for="deporte">Musica</label>
+                    <input type="checkbox" name="deporte">
+
+                    <br>
+
+                    <label for="dato">Sexo</label>
+                    <input type="text" name="dato" disabled placeholder="Hombre">
+
+                    <br>
+
+                    <label for="dicheros">Ficheros</label>
+                    <input type="file" name="ficheros" accept=".txt">
+
+                    <br>
+
+                    <input type="submit" value="Pulsa">
+
+                    <br>
+
+                    <label for="deporte">Musica</label>
+                    <input type="radio" name="deporte">
+
+                    <br>
+
+                    <label for="deporte">Musica</label>
+                    <input type="checkbox" name="deporte">
+
+                    <br>
+
+                    <label for="deporte">Musica</label>
+                    <input type="checkbox" name="deporte">
+
+                    <br>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

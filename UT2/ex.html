@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="#007000" > <!--bgcolo para cambiar el color del fondo, 
+    text definir color de texto 
+    link/vlink/alink usado para especificar el color del enlace vistazo y activo
+    background para usar una imagen de fondo-->
+    <a name="zonaalta"><!--damos nombre a una zona a la que querremos saltar-->
+    <p>Hola buenas</p><!--etiqueta de parrofo
+    aling se puede utilizar para alinear left/right/center/justify-->
+    <br><!--Etiqueta de salto de linea-->
+    <h1>Cabecera</h1><!--Etiqueta h seguida de un numero 
+    es utilizada para crear cabeceras-->
+    <p>
+        <font size="4" color="#ff0000">Prueba del font</font> <!--font utilizado para cambiar el tamaño y color del texto en una zona determinada-->
+        <b>Atributi b</b><!--b resalta en negrita-->
+        <i>Atributo i</i><!--i letra en cursiva-->
+        <u>Atributo u</u><!--u subraya las letras-->
+        <sub>Atributo sub</sub><!--sub subindice-->
+        <sup>Atributo sup</sup><!--sup superindice-->
+        <hr><!--hr pone una line divisoria-->
+        <ul><!--ul lista desordenada-->
+            <li type="circle">Moralo</li><!--type="circle" curculo-->
+            <li type="disc">Talayuela</li>
+            <li type="square">Plasencia</li>
+        </ul>
+        <ol><!--ol Lista ordenada-->
+            <li type="a">Moralo</li><!--Lista ordenado por letras-->
+            <li>Talayuela</li><!--Lista ordenada por numeros-->
+        </ol>
+        <dl><!--Lista descriptiva-->
+            <dt>Vaya</dt><!--Palabra a describir-->
+                <dd>Conjungacion de verbo ir</dd><!--Descripcion-->
+        </dl>
+    </p>
+    <a href="google.com" target="_blank">Google</a><!--a para insertar enlaces Con el target indicamos si queremos verlo en otra ventana (_blank) o en la misma ventana(_self)--><br>
+    <a href="google.com"><img src="google.PNG"> </a> <!--a le inserta un enlace a la imagen y img inserta la imagen a la pagina web--><br>
+    <img src="formas/imagen.png" usemap="#zonas"/><!--inserta la imagen y le damos nombre para indicar que es la imagen sobre la que queremos dar el area-->
+    <map name="zonas"><!--indicamos la imagen sobre la que diburajesmos el area-->
+        <area shape="rect" coords="10,10,209,89" href="formas/rectangulo.html"/><!--Indicamos la forma geometrica, el area mediante cotdenadas y el enlace donde queremos ir-->
+        <area shape="circle" coords="74,188,56" href="formas/circulo.html" alt="círculo"/>
+        <area shape="poly" coords="198,125,310,234,198,234,198,128"href="formas/triangulo.html"/>
+    </map>
+    <table border="20" bordercolor="pink" background="IMG_20250906_133725 (1).jpg" width="300" align="center" cellspacing="25 " cellpadding="10"><!--Table definimos la tabla, border le da la anchura al borde,bordercolor le da color a los bordes, background le da fondo de imagen a la tabla, width establece un ancho a la tabla, aling alinea el texto (left/center/right), cellspaing define el espacio entre los bordes de la tabla, cellpadding declara el interior del margen de las celdas-->
+        <tr bgcolor="purple"><!--define una fila, bgcolor le da color al fondo de las filas-->
+            <td>Fila 1 Col. 1</td><!--Define una celda en una fila -->
+            <td>Fila 1 Col. 2</td>
+        </tr>
+        <tr>
+            <td bgcolor="darkblue">Fila 2 Col. 1</td>
+            <td background="google.PNG">Fila 2 Col. 2</td>
+        </tr>
+        <tr>
+            <td bgcolor="basto">Fila 3 Col. 1</td>
+            <td bgcolor="orange">Fila 3 Col. 2</td>
+        </tr>
+   </table>
+    <a href="#zonaalta">Zona alta</a><!--Enlazamos con la zona a la que queremos saltar-->
+
+
+    
+
+    
+</body>
+</html>

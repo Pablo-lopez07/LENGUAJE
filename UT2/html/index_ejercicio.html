@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        INDUSTRIAS EXTREMEÑAS S.A.
+    </h1>
+
+    <div>
+        <section>
+            <form action="#" method="post" name="formulario">
+
+                <fieldset>
+                    <legend>FORMULARIO DE PEDIDO</legend>
+
+                    <table>
+
+                        <tr>
+                            <td>
+                                <p><b>> Paso 1. Identificación</b></p>
+                            </td>
+
+                        </tr>
+                    
+                        <tr>
+                            <td colspan="2">
+                                <fieldset>
+                                    <legend>Datos del cliente</legend>
+    
+                                    <br>
+
+                                    <label for="correo">Correo Electronico</label>
+                                    <input type="text" name="correo" size="15">
+
+                                    <br>
+
+                                    <label for="password">Contraseña</label>
+                                    <input type="password" name="password" size="7" minlength="6">
+                                    
+                                    <br>
+
+                                    <label><i>(Longitud minima 6 caracteres)</i></label>
+                                </fieldset>
+                            </td>
+
+                            <td>
+                                <fieldset>
+                                    <legend>Tipo de Cliente</legend>
+
+                                    <br>
+
+                                    <input type="radio" id="Particular" name="cliente" checked>
+                                    <label for="Particular">Particular</label>
+                                   
+                                    <br>
+
+                                    <input type="radio" id="Asociacion" name="cliente">
+                                    <label for="Asociacion">Asociacion</label>
+                                    
+                                    <br>
+
+                                    <input type="radio" id="Empresa" name="cliente">
+                                    <label for="Empresa">Empresa</label>  
+                                </fieldset>
+                            </td>
+
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p><b>> Paso 2. Pedido</b></p>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <fieldset>
+                                    <legend>Datos del Producto</legend>
+
+                                    <label for="producto">Producto</label>
+                                    <br>
+                                    <select multiple size="8" name="producto" id="producto">
+                                        <optgroup label="Armaduras">
+                                            <option value="1">AR001 Oro Reluciente</option>
+                                            <option value="2">AR002 Plata Pulida</option>
+                                            <option value="3">AR003 Bronce Reforzado</option>
+                                        </optgroup>
+                                        <optgroup label="Extras">
+                                            <option value="4">EX001 Escudo</option>
+                                            <option value="5">EX002 Invisibilidad</option>
+                                        </optgroup>
+                                    </select>
+                                </fieldset>
+                            </td>
+
+                            <td colspan="3">
+                                <fieldset>
+                                    <legend>Información de interés</legend>
+                                
+                                    <label for="multilinea">Comentarios</label>
+                                    <br>
+                                    <textarea name="multilinea" id="multilinea" cols="50" rows="7" placeholder="          Escriba aqui sus comentarios"></textarea>
+
+                                    <br>
+
+                                    <input type="checkbox" name="publi" checked>
+                                    <label for="publi">Acepto recibir información publicitaria</label>
+                                </fieldset>
+                            </td>
+
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                               <fieldset>
+                                    <legend>Datos de Envio</legend>
+
+                                    <br>
+
+                                    <label for="direccion">Dirección</label>
+                                    <br>
+                                    <input type="text" name="direccion" size="20">
+
+                                    <br>
+
+                                    <label for="ciudad">Ciudad</label>
+                                    <input type="text" name="ciudad" size="10">
+
+                                    <br>
+
+                                    <label for="codigopostal">Codigo postal</label>
+                                    <input type="text" name="codigopostal" size="10">
+                               </fieldset>
+                            </td>
+
+
+
+                            <td>
+                                <fieldset>
+                                    <legend>Datos Bancarios</legend>
+
+                                    <br>
+
+                                    <label for="entidad">Nombre de la Entidad</label>
+                                    <br>
+                                    <input type="text" name="entidad" size="20">
+
+                                    <br>
+
+                                    <label for="cuenta">N de cuenta</label>
+                                    <br>
+                                    <input type="text" name="cuenta" size="20">
+                                </fieldset>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
