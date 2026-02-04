@@ -21,17 +21,21 @@ body {
     position: sticky;
     top: 0px;
     z-index: 3;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .nav-menu ul {
     display: flex;
     list-style: none;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .nav-menu a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 /* 2. GRID: Galería de tarjetas  */

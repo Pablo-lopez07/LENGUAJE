@@ -3,11 +3,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+   
 }
 
 body {
     font-family: Arial, sans-serif;
     padding-bottom: 100px;
+    background-color:#f4f4f4;
 }
 
 /* 1. FLEXBOX: Cabecera  */
@@ -22,7 +24,10 @@ body {
     top: 0px;
     z-index: 3;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+
 
 .logo {
     font-size: 1.5rem;
@@ -40,6 +45,7 @@ body {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
+    
 }
 
 .nav-menu a:hover {
@@ -101,7 +107,18 @@ img:hover {
     transform: scale(1.1);
 }
 
+/*footer*/
 
+.main-footer{
+    width:100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
 
 /* MEDIA QUERIES - RESPONSIVE DESIGN  OJO, DE AQUÍ EN ADELANTE NO TOCAR*/
 
